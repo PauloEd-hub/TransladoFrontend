@@ -5,6 +5,13 @@ export interface Destino{
     id: bigint,
     nome: String,
     sigla: String,
-    translados: Translado[]
+    translados: Array<Translado>
+}
 
+export interface DestinoRequest{
+
+}
+
+export interface DestinoResponse{
+    
 }
