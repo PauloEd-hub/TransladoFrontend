@@ -7,11 +7,3 @@ export interface Destino{
     sigla: String,
     translados: Array<Translado>
 }
-
-export interface DestinoRequest{
-
-}
-
-export interface DestinoResponse{
-    
-}
