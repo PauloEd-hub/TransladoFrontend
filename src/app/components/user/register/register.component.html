@@ -1,22 +1,26 @@
-<mat-card class="card-register">
-  <mat-card-content class="card-register-content">
-    <img mat-card-image class="logo" src="../../../../assets/unichristus.logo.png" alt="">
-    <h3>Registre-se</h3>
-    <mat-form-field>
-        <mat-label>Digite seu usuario</mat-label>
-        <input matInput placeholder="paulo123" required>
+<div class="container">
+  <div class="account-body">
+  <mat-card class="card-register">
+    <mat-card-content class="card-register-content">
+      <img mat-card-image class="logo" src="../../../../assets/unichristus.logo.png" alt="">
+      <h3>Registre-se</h3>
+      <mat-form-field class="fiel-register">
+          <mat-label>Digite seu usuario</mat-label>
+          <input matInput placeholder="paulo123" required>
+          <mat-error></mat-error>
+      </mat-form-field>
+      <mat-form-field class="fiel-register">
+        <mat-label>Digite seu email</mat-label>
+        <input matInput placeholder="user@gmail.com" required>
         <mat-error></mat-error>
-    </mat-form-field>
-    <mat-form-field>
-      <mat-label>Digite seu email</mat-label>
-      <input matInput placeholder="user@gmail.com" required>
-      <mat-error></mat-error>
-  </mat-form-field>
-    <mat-form-field>
-        <mat-label>Digite sua senha</mat-label>
-        <input matInput type="password" required>
-        <mat-error></mat-error>
-    </mat-form-field>
-  
-  </mat-card-content>
-</mat-card>
+    </mat-form-field >
+      <mat-form-field class="fiel-register">
+          <mat-label>Digite sua senha</mat-label>
+          <input matInput type="password" required>
+          <mat-error></mat-error>
+      </mat-form-field>
+    
+    </mat-card-content>
+  </mat-card>
+</div>
+</div>
