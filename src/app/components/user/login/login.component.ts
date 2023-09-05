@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -7,25 +7,21 @@ import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit{
-
-  formGroup!: FormGroup;
+ 
+    email =  new FormControl('', [Validators.required, Validators.email]);
+    senha =  new FormControl('', [Validators.required, Validators.nullValidator]);
 
   constructor(private fb: FormBuilder) {}
 
-
   ngOnInit(): void {
-    this.formGroup = this.fb.group({
-      nome: new FormControl(),
-      email: new FormControl()
-    })
+
+
   }
 
   onSubmit(){
-
-    const values = this.formGroup.value;
-
-    return values;
-
+    if(this.email) {
+      console.log("Deu certo")
+      console.log(this.email, this.senha)
+    } 
   }
-
 }

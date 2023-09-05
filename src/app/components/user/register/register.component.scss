@@ -34,6 +34,32 @@
     flex-direction: column;
 }
 
+.field-register{
+    width: 100%;
+}
+
+.field-email{
+    width: 60%;
+    padding-right: 5px;
+}
+
 .fiel-register{
-    width: 70%;
+    width: 40%;
+}
+
+.form-register{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.teste{
+    flex-direction: row;
+    display: flex;
+}
+
+.div-buttons{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
 }
