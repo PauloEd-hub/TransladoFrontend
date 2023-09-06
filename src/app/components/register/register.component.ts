@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 
 @Component({
@@ -9,16 +9,28 @@ import { FormBuilder, Validators } from '@angular/forms';
 })
 export class RegisterComponent implements OnInit{
 
-  form = this.fb.group({
-    id: [{value:'', disable: true}],
-    nome: ['', [Validators.required]],
-    email: ['', [Validators.required]],
-    senha: ['', [Validators.required]],
-  })
+  formSignup!: FormGroup;
 
+ 
   constructor(private fb: FormBuilder) {}
 
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    this.formSignup = this.fb.group({
+      nome: ['', [Validators.required]],
+      email: ['', [Validators.required, Validators.email]],
+      senha: ['', Validators.required],
+    })
+
+  }
+
+
+  onSubmitRegister(){
+    if(this.formSignup.valid) {
+      return console.log(this.formSignup.value);
+    }
+    else{
+      window.alert("Erro ao por campos")
+
+    }
   }
 }

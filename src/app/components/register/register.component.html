@@ -9,27 +9,27 @@
           alt=""
         />
         <h3>Registre-se</h3>
-        <form class="form-register">
+        <form class="form-register" [formGroup]="formSignup" (ngSubmit)="onSubmitRegister()">
           <mat-form-field class="field-register">
             <mat-label>Digite seu nome</mat-label>
-            <input matInput placeholder="paulo123" required />
+            <input matInput placeholder="paulo123"  formControlName="nome" required />
             <mat-error></mat-error>
           </mat-form-field>
           <div class="teste">
             <mat-form-field class="field-email">
               <mat-label>Digite seu email</mat-label>
-              <input matInput placeholder="user@gmail.com" required />
+              <input matInput placeholder="user@gmail.com" formControlName="email" required />
               <mat-error></mat-error>
             </mat-form-field>
             <mat-form-field class="fiel-register">
               <mat-label>Digite sua senha</mat-label>
-              <input matInput type="password" required />
+              <input matInput type="password"  formControlName="senha" required />
               <mat-error></mat-error>
             </mat-form-field>
           </div>
           <div class="div-buttons">
             <button mat-flat-button color="warn" style="width: 40%;">Cancelar cadastro</button>
-            <button mat-raised-button color="primary" style="width: 40%;">Registrar</button>
+            <button mat-raised-button color="primary" style="width: 40%;" type="submit">Registrar</button>
           </div>
         </form>
       </mat-card-content>
