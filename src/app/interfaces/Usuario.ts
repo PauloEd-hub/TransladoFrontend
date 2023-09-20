@@ -1,3 +1,5 @@
+import { Role } from "./Role"
+
 export interface Usuario{
     id: bigint,
     nome: String,
@@ -11,6 +13,28 @@ export interface UsuarioRequest{
     senha: String
 }
 
-export interface UsuarioResponse{
+export interface UsuarioLoginRequest {
+    email: String,
+    senha: String,
+}
+
+export interface UsuarioLoginResponse {
+    token: string
+}
+
+
+export interface UsuarioRegisterRequest{
+    nome: String,
+    email: String,
+    senha: String,
+    role: Role
+    
+}
+export interface UsuarioRegisterResponse{
+    id: bigint,
+    nome: String,
+    email: String,
+    senha: String,
+    role: Role
 
 }
