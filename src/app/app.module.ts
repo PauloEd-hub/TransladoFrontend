@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
-import { RegisterTransladoComponent } from './components/translado/register-translado/register-translado.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
@@ -16,6 +15,9 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import { FormGroup } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { TransladoComponent } from './pages/translado/translado.component';
+import { HomeComponent } from './pages/home/home.component';
 
 
 
@@ -24,8 +26,10 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    RegisterTransladoComponent,
+    TransladoComponent,
     HeaderComponent,
+    TransladoComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,6 +42,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatToolbarModule,
     MatIconModule,
     ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

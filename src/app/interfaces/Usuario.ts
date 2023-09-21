@@ -4,13 +4,8 @@ export interface Usuario{
     id: bigint,
     nome: String,
     login: String,
-    senha: String
-}
-
-export interface UsuarioRequest{
-    nome: String,
-    email: String,
-    senha: String
+    senha: String,
+    role: Role
 }
 
 export interface UsuarioLoginRequest {

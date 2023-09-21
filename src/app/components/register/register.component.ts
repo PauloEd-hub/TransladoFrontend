@@ -21,33 +21,45 @@ export class RegisterComponent implements OnInit{
   constructor(private fb: FormBuilder, 
     private authService: AuthService,
     private registerService: RegisterService,
-    private route: Router
+    private router: Router
     
     
     
     ) {}
 
   ngOnInit(): void {
+
     this.formSignup = this.fb.group({
       nome: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.email]],
       senha: ['', Validators.required],
+      role: ['', Validators.required],
     })
 
   }
 
 
-  registrar() {
-    this.registerService.registerUser(this.formSignup.value).subscribe((res) => {
-      if(res) {
-        this.formSignup.reset();
-        this.route.navigate(['/login'])
-
+  onSubmitRegister() {
+    if(this.formSignup.valid) {
+      const usuarioRegisterRequest = {
+        nome: this.formSignup.get('nome')?.value,
+        email: this.formSignup.get('email')?.value,
+        senha:this.formSignup.get('senha')?.value,
+        role: this.formSignup.get('role')?.value,
       }
-    });
 
-
+      this.registerService.registerUser(usuarioRegisterRequest)
+      .subscribe({
+        next:(response) => {
+            this.router.navigate(["/login"])
+            console.log("Valores registro", response)
+        },
+        error: (error) => {
+          console.log("Erro ao cadastrar usuário", error)
+        }
+      })
     }
+  }
 
 
 }
