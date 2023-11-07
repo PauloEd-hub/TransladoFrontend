@@ -18,6 +18,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { TransladoComponent } from './pages/translado/translado.component';
 import { HomeComponent } from './pages/home/home.component';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 
 
@@ -42,7 +43,8 @@ import { HomeComponent } from './pages/home/home.component';
     MatToolbarModule,
     MatIconModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

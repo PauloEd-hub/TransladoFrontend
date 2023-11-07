@@ -1,0 +1,21 @@
+.container{
+    height: 100vh;
+    display: flex;
+    width: 100vw;
+    padding-left: 9px;
+    justify-content: space-between;
+}
+
+.img-student{
+    width: 50%;
+    height: 63%;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 70vh;
+
+}

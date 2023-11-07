@@ -33,32 +33,33 @@ export class RegisterComponent implements OnInit{
       nome: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.email]],
       senha: ['', Validators.required],
-      role: ['', Validators.required],
     })
 
   }
 
 
-  onSubmitRegister() {
-    if(this.formSignup.valid) {
-      const usuarioRegisterRequest = {
+  onSubmit() {
+ 
+      const usuarioRegisterRequest: UsuarioRegisterRequest = {
         nome: this.formSignup.get('nome')?.value,
         email: this.formSignup.get('email')?.value,
         senha:this.formSignup.get('senha')?.value,
-        role: this.formSignup.get('role')?.value,
+       
       }
 
       this.registerService.registerUser(usuarioRegisterRequest)
       .subscribe({
         next:(response) => {
+          if(response) {
             this.router.navigate(["/login"])
             console.log("Valores registro", response)
-        },
+        }
+      },
+
         error: (error) => {
           console.log("Erro ao cadastrar usuário", error)
         }
       })
-    }
   }
 
 

@@ -22,7 +22,7 @@ export interface UsuarioRegisterRequest{
     nome: String,
     email: String,
     senha: String,
-    role: Role
+    // role: Role
     
 }
 export interface UsuarioRegisterResponse{
