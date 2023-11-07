@@ -4,6 +4,7 @@ import { AuthService } from '../../services/auth.service';
 import { RegisterService } from 'src/app/services/register.service';
 import { UsuarioRegisterRequest } from 'src/app/interfaces/Usuario';
 import { Route, Router } from '@angular/router';
+import { Role } from 'src/app/interfaces/Role';
 
 
 @Component({
@@ -14,6 +15,7 @@ import { Route, Router } from '@angular/router';
 export class RegisterComponent implements OnInit{
 
   formSignup!: FormGroup;
+  role: string
 
   // https://www.positronx.io/angular-jwt-user-authentication-tutorial/
 
@@ -22,10 +24,13 @@ export class RegisterComponent implements OnInit{
     private authService: AuthService,
     private registerService: RegisterService,
     private router: Router
-    
-    
-    
-    ) {}
+    ) {
+      this.role = "ALUNO"
+
+
+
+
+    }
 
   ngOnInit(): void {
 
@@ -33,6 +38,7 @@ export class RegisterComponent implements OnInit{
       nome: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.email]],
       senha: ['', Validators.required],
+      role: ['', Validators.required]
     })
 
   }
@@ -44,6 +50,7 @@ export class RegisterComponent implements OnInit{
         nome: this.formSignup.get('nome')?.value,
         email: this.formSignup.get('email')?.value,
         senha:this.formSignup.get('senha')?.value,
+        role: this.role
        
       }
 
@@ -51,7 +58,7 @@ export class RegisterComponent implements OnInit{
       .subscribe({
         next:(response) => {
           if(response) {
-            this.router.navigate(["/login"])
+            this.router.navigate(["/auth/login"])
             console.log("Valores registro", response)
         }
       },
