@@ -13,12 +13,8 @@ export class HeaderComponent {
   }
 
 
-
-
-
-
   transladoCreate() {
-    this.route.navigate(['/translado'])
+    this.route.navigate(['/adicionar/carro'])
   }
 
 }

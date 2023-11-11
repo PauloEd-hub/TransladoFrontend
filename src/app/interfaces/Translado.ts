@@ -11,3 +11,12 @@ export interface Translado{
     usuario: Usuario,
     destino: Destino
 }
+
+export interface TransladoRequest {
+    dataDesejada: Date,
+    turno: Turno,
+    veiculo: Veiculo,
+    usuario: Usuario,
+    destino: Destino
+
+}

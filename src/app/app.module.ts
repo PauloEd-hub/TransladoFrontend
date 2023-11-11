@@ -19,6 +19,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { TransladoComponent } from './pages/translado/translado.component';
 import { HomeComponent } from './pages/home/home.component';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { CarrosComponent } from './pages/carros/carros.component';
+import { FormVeiculosComponent } from './components/form-veiculos/form-veiculos.component';
+import {MatDividerModule} from '@angular/material/divider';
+import { FormTransladoComponent } from './components/form-translado/form-translado.component';
+import { FormDestinoComponent } from './components/form-destino/form-destino.component';
+import {MatSelectModule} from '@angular/material/select';
 
 
 
@@ -31,6 +37,10 @@ import {MatGridListModule} from '@angular/material/grid-list';
     HeaderComponent,
     TransladoComponent,
     HomeComponent,
+    CarrosComponent,
+    FormVeiculosComponent,
+    FormTransladoComponent,
+    FormDestinoComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,7 +54,10 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatIconModule,
     ReactiveFormsModule,
     HttpClientModule,
-    MatGridListModule
+    MatGridListModule,
+    MatDividerModule,
+    MatSelectModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -6,3 +6,10 @@ export interface Veiculo{
     ocupacaoMaxima: number,
     translados: Translado[]
 }
+
+export interface VeiculoFormRequest {
+    descricao: String,
+    ocupacaoMaxima: number,
+    placa: String
+
+}
