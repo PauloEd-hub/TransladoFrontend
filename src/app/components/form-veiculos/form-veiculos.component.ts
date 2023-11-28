@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class FormVeiculosComponent {
 
+
+  constructor() {
+
+  }
+
+
+
+  registerCarro() {
+    
+  }
+
 }
