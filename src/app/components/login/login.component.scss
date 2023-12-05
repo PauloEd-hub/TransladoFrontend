@@ -1,46 +1,9 @@
-.card-register{
+.uk-container{
+    width: 100vw;
+    height: 100vh;
+}
+
+.uk-card{
     width: 50%;
-    border-radius: 12px 12px 12px 12px;
-    box-shadow: black;
-}
-
-.logo{
-    width: 100px;
-}
-
-.container {
-    // min-height: calc(100vh + env(safe-area-inset-top));
-    min-height: 100vh;
-    // top: calc(0px - env(safe-area-inset-top));
-    // top: 0;
-    padding: 0px 0px;
-  }
-
-  .account-body {
-    position: relative;
-    width: 100%;
-    top: 80px;
-    height: calc(75vh - 25px);
-    display: flex;
-    overflow-y: hidden;
-    align-items: center;
-    justify-content: center;
-  }
-
-.card-register-content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.fiel-register{
-    width: 80%;
-}
-
-.form-login{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    height: 50%;
 }
