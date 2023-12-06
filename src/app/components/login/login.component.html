@@ -1,18 +1,21 @@
 <div class="uk-container uk-container-large uk-flex uk-flex-center uk-flex-middle">
-    <div class="uk-card uk-card-default uk-card-body">
-        <form [formGroup]="signinForm">
-            <h3 class="uk-card-title">Login</h3>
+    <div class="uk-card uk-card-default uk-card-body uk-border-rounded">
+        
+        <form [formGroup]="signinForm" class="uk-flex uk-flex-center uk-flex-middle uk-flex-column">
+            <img src="../../../assets/Logo-Unichristus-em-Branco.png" style="width: 60%;" alt="Logo Unicrhistus">
+            <h3 class="uk-card-title" style="font-family: Montserrat,sans-serif; font-weight: 700;text-transform: uppercase;font-size: 14px;color: #fff;">Login</h3>
             <div class="uk-inline">
-                <span class="uk-form-icon" uk-icon="icon: user"></span>
-                <input class="uk-input" type="text" aria-label="Not clickable icon">
+                <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: user"></span>
+                <input class="uk-input uk-form-width-large" type="text" placeholder="Email" aria-label="Not clickable icon">
             </div>
-            <div class="uk-margin">
-                <div class="uk-inline">
+            
+                <div class="uk-inline uk-margin-top">
                     <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
-                    <input class="uk-input" type="text" aria-label="Not clickable icon">
+                    <input class="uk-input uk-form-width-large" type="password" placeholder="Senha" aria-label="Not clickable icon">
                 </div>
-            </div>
 
+            <button class="uk-button uk-button-secondary uk-margin-small-top">Fazer Login</button>
+            <a class="uk-padding-small" href="" style="color: white;font-size: small;">Não tem login?<a>Cadastre-se</a></a>
 
         </form>
 
