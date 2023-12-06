@@ -16,6 +16,7 @@ import { CarrosComponent } from './pages/carros/carros.component';
 import { FormVeiculosComponent } from './components/form-veiculos/form-veiculos.component';
 import { FormTransladoComponent } from './components/form-translado/form-translado.component';
 import { FormDestinoComponent } from './components/form-destino/form-destino.component';
+import { TopbarComponent } from './components/topbar/topbar.component';
 
 
 
@@ -33,6 +34,7 @@ import { FormDestinoComponent } from './components/form-destino/form-destino.com
     FormVeiculosComponent,
     FormTransladoComponent,
     FormDestinoComponent,
+    TopbarComponent
   ],
   imports: [
     BrowserModule,
