@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HeaderComponent } from './components/header/header.component';
 import { FormGroup } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -27,7 +26,6 @@ import { TopbarComponent } from './components/topbar/topbar.component';
     LoginComponent,
     RegisterComponent,
     TransladoComponent,
-    HeaderComponent,
     TransladoComponent,
     HomeComponent,
     CarrosComponent,
