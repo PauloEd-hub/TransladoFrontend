@@ -1,21 +1,62 @@
-<nav class="uk-navbar-container" uk-navbar>
-    <div class="uk-navbar-left">
-
+<nav class="uk-navbar-container">
+  <div class="uk-container">
+    <div uk-navbar>
+      <div class="uk-navbar-left">
         <ul class="uk-navbar-nav">
-            <li>
-                <a>Serviços ao aluno</a>
-            </li>
-            <li><a>Unichristus online</a></li>
+          <li>
+            <a>Serviços ao aluno</a>
+            <div
+              uk-dropdown="animation: reveal-top; animate-out: true; duration: 700"
+            >
+              <ul class="uk-nav uk-dropdown-nav">
+                <li class="uk-active">
+                  <a href="#">Central de estágios e Emprego</a>
+                </li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="">Biblioteca</a></li>
+                <li><a href="#">SAP</a></li>
+                <li><a href="#">Internacional</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a>Unichristus online</a></li>
         </ul>
-    </div>
-
-    <div class="uk-navbar-right">
+      </div>
+      <div class="uk-navbar-right">
         <ul class="uk-navbar-nav">
-            <li class="uk-active"><a href="#">Active</a></li>
-            <li>
-                <a href="#">Parent</a>
-            </li>
-            <li><a href="#">Item</a></li>
+          <li>
+            <a>Mais informações</a>
+          </li>
+          <li><a>Inscreva-se</a></li>
         </ul>
+      </div>
     </div>
+  </div>
+
+  <nav class="uk-navbar-container second-container">
+
+    <div class="uk-container">
+    <div uk-navbar>
+  
+      <div class="uk-navbar-left">
+        <div class="logo">
+          <img style="width: 14rem;" src="../../../assets/Logo-Unichristus-em-Branco.png" alt="">
+        </div>
+      </div>
+      <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav">
+          <li>
+            <a>A Unichristus</a>
+          </li>
+          <li><a>Nossos Cursos</a></li>
+          <li><a>Bolsas e Financiamentos</a></li>
+          <li><a>Pesquisa</a></li>
+          <li><a>Inscreva-se</a></li>
+          
+        </ul>
+      </div>
+      </div>
+
+      </div>
+</nav>
 </nav>
