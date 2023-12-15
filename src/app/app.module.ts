@@ -16,9 +16,7 @@ import { FormVeiculosComponent } from './components/form-veiculos/form-veiculos.
 import { FormTransladoComponent } from './components/form-translado/form-translado.component';
 import { FormDestinoComponent } from './components/form-destino/form-destino.component';
 import { TopbarComponent } from './components/topbar/topbar.component';
-
-
-
+import { SlideshowComponent } from './components/slideshow/slideshow.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +30,8 @@ import { TopbarComponent } from './components/topbar/topbar.component';
     FormVeiculosComponent,
     FormTransladoComponent,
     FormDestinoComponent,
-    TopbarComponent
+    TopbarComponent,
+    SlideshowComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,10 +39,8 @@ import { TopbarComponent } from './components/topbar/topbar.component';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    
-    
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
