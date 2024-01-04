@@ -4,7 +4,6 @@ import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
-import { TransladoComponent } from './pages/translado/translado.component';
 import { CarrosComponent } from './pages/carros/carros.component';
 
 const routes: Routes = [
