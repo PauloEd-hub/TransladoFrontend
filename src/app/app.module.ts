@@ -21,6 +21,7 @@ import { AuthComponent } from './modulos/user/components/auth/auth.component';
 
 
 
+import { SlideshowComponent } from './components/slideshow/slideshow.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { AuthComponent } from './modulos/user/components/auth/auth.component';
     TopbarComponent,
     UserComponent,
     VeiculosComponent,
-    AuthComponent
+    AuthComponent,
+    SlideshowComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,10 +45,8 @@ import { AuthComponent } from './modulos/user/components/auth/auth.component';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    
-    
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
