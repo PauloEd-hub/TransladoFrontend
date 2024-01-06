@@ -3,10 +3,6 @@ import { Component, type OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-register-vehicle',
-  standalone: true,
-  imports: [
-    CommonModule,
-  ],
   templateUrl: './RegisterVehicle.component.html',
   styleUrls: ['./RegisterVehicle.component.scss'],
 })

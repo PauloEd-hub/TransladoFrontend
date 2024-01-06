@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Usuario, UsuarioLoginRequest } from '../interfaces/Usuario';
+import { Usuario, UsuarioLoginRequest } from '../interfaces/Usuario'
 
 const TOKEN_KEY = 'auth-token';
 const USER_KEY = 'auth-user';

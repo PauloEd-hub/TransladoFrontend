@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { AuthService } from '../../services/auth.service';
-import { RegisterService } from 'src/app/services/register.service';
-import { UsuarioRegisterRequest } from 'src/app/interfaces/Usuario';
+import { AuthService } from '../../../../shared/services/auth.service';
+import { RegisterService } from 'src/app/shared/services/register.service';
+import { UsuarioRegisterRequest } from 'src/app/shared/interfaces/Usuario';
 import { Route, Router } from '@angular/router';
-import { Role } from 'src/app/interfaces/Role';
+import { Role } from 'src/app/shared/interfaces/Role';
 
 
 @Component({

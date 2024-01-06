@@ -4,10 +4,6 @@ import { NgModule } from "@angular/core";
 import { AuthComponent } from "./components/auth/auth.component";
 
 
-
-
-
-
 const routes: Routes = [
     {
         path: '',
@@ -30,4 +26,4 @@ const routes: Routes = [
     exports: [RouterModule] 
 })
 
-export class VeiculoRoutingModule{}
+export class UserRoutingModule{}
