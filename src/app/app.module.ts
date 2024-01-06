@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './components/login/login.component';
+
 import { RegisterComponent } from './components/register/register.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormGroup } from '@angular/forms';
@@ -17,16 +17,16 @@ import { FormDestinoComponent } from './components/form-destino/form-destino.com
 import { TopbarComponent } from './components/topbar/topbar.component';
 import { UserComponent } from './modulos/user/user.component';
 import { VeiculosComponent } from './modulos/veiculos/veiculos.component';
-import { AuthComponent } from './modulos/user/components/auth/auth.component';
+
 
 
 
 import { SlideshowComponent } from './components/slideshow/slideshow.component';
+import { AuthComponent } from './modulos/user/components/auth/auth.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
     RegisterComponent,
     HomeComponent,
     CarrosComponent,
@@ -36,7 +36,6 @@ import { SlideshowComponent } from './components/slideshow/slideshow.component';
     TopbarComponent,
     UserComponent,
     VeiculosComponent,
-    AuthComponent,
     SlideshowComponent,
   ],
   imports: [
