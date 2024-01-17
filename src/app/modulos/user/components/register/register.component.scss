@@ -1,65 +1,19 @@
-.card-register{
-    width: 50%;
-    border-radius: 12px 12px 12px 12px;
-    box-shadow: black;
+.uk-container {
+  width: 90vw;
+  height: 73vh;
 }
 
-.logo{
-    width: 100px;
+.uk-card {
+  width: 35rem;
+  height: 24rem;
+  background-color: #19385d;
 }
 
-.container {
-    // min-height: calc(100vh + env(safe-area-inset-top));
-    min-height: 100vh;
-    // top: calc(0px - env(safe-area-inset-top));
-    // top: 0;
-    padding: 0px 0px;
-  }
-
-  .account-body {
-    position: relative;
-    width: 100%;
-    top: 80px;
-    height: calc(75vh - 25px);
-    display: flex;
-    overflow-y: hidden;
-    align-items: center;
-    justify-content: center;
-  }
-
-.card-register-content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.form-rules {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
-
-.field-register{
-    width: 100%;
-}
-
-.field-email{
-    width: 60%;
-    padding-right: 5px;
-}
-
-.fiel-register{
-    width: 40%;
-}
-
-.form-register{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.teste{
-    flex-direction: row;
-    display: flex;
-}
-
-.div-buttons{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
+.input_password {
+  width: 78%;
 }
