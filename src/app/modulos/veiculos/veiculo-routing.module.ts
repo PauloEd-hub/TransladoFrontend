@@ -12,6 +12,10 @@ const routes: Routes = [
             {
                 path: 'registro-veiculo',
                 component: RegisterVehicleComponent,
+            },
+            {
+                path: 'ver-veiculos',
+                component: RegisterVehicleComponent,
             }
         ]
     }

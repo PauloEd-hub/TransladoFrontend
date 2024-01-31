@@ -30,7 +30,7 @@
           </li>
         </div>
 
-          <div><li><a class="" routerLink="auth/login">Login</a></li></div>
+          <div><li><a class="" routerLink="usuario/login">Login</a></li></div>
 
 
         </ul>
@@ -44,17 +44,17 @@
     <div uk-navbar>
   
       <div class="uk-navbar-left">
-        <div class="logo">
+        <div class="logo" style="cursor: pointer;" (click)="goHome()">
           <img style="width: 14rem;" src="../../../assets/Logo-Unichristus-em-Branco.png" alt="">
         </div>
       </div>
       <div class="uk-navbar-right">
         <ul class="uk-navbar-nav">
           <li>
-            <a>Translados de Alunos</a>
+            <a>Translados</a>
           </li>
-          <li><a>Cadastrar Veículos</a></li>
-          <li><a>Cadastrar Destinos</a></li>
+          <li (click)="goToVehicles()"><a>Veículos</a></li>
+          <li><a>Destinos</a></li>
           <li><a>Ver todos</a></li>
           <li><a>Inscreva-se</a></li>
           

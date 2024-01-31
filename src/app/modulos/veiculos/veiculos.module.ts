@@ -6,10 +6,11 @@ import { RegisterVehicleComponent } from "./components/RegisterVehicle/RegisterV
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { SharedModule } from "src/app/shared/shared.module";
 import { VeiculoRoutingModule } from "./veiculo-routing.module";
+import { SeeVehicleComponent } from "./components/see-vehicle/see-vehicle.component";
 
 
 @NgModule({
-    declarations: [VeiculosComponent,RegisterVehicleComponent, ],
+    declarations: [VeiculosComponent,RegisterVehicleComponent, SeeVehicleComponent],
     imports: [
       CommonModule,
       ReactiveFormsModule,

@@ -8,6 +8,7 @@ import { CarrosComponent } from "./pages/carros/carros.component";
 import { FormDestinoComponent } from "./components/form-destino/form-destino.component";
 import { FormVeiculosComponent } from "./components/form-veiculos/form-veiculos.component";
 import { TopbarComponent } from "./components/topbar/topbar.component";
+import { CardVehiclesComponent } from "./components/card-vehicles/card-vehicles.component";
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { TopbarComponent } from "./components/topbar/topbar.component";
     FormDestinoComponent,
     TopbarComponent,
     FormVeiculosComponent,
+    CardVehiclesComponent
         ],
     imports: [
       CommonModule,
@@ -30,6 +32,7 @@ import { TopbarComponent } from "./components/topbar/topbar.component";
       FormDestinoComponent,
       TopbarComponent,
       FormVeiculosComponent,
+      CardVehiclesComponent
       
     ],
 

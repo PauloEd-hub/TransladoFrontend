@@ -37,7 +37,7 @@ export class RegisterComponent implements OnInit{
     this.formSignup = this.fb.group({
       nome: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.email]],
-      senha: ['', Validators.required],
+      password: ['', Validators.required],
       role: ['', Validators.required]
     })
 
@@ -49,7 +49,7 @@ export class RegisterComponent implements OnInit{
       const usuarioRegisterRequest: UsuarioRegisterRequest = {
         nome: this.formSignup.get('nome')?.value,
         email: this.formSignup.get('email')?.value,
-        senha:this.formSignup.get('senha')?.value,
+        senha:this.formSignup.get('password')?.value,
         role: this.role
        
       }

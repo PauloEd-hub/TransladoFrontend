@@ -48,4 +48,8 @@ export class AuthComponent implements OnInit {
     })
   }
 
+  goToRegister(){
+    this.route.navigate(['usuario/register'])
+  }
+
 }

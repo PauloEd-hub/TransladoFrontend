@@ -1,0 +1,31 @@
+<div class="uk-container uk-container-large uk-flex uk-flex-center uk-flex-middle">
+    <div class="uk-card uk-card-default uk-card-body uk-border-rounded">
+        
+        <form [formGroup]="formSignup" class="uk-flex uk-flex-center uk-flex-middle uk-flex-column">
+            <h3 class="uk-card-title" style="font-family: Montserrat,sans-serif; font-weight: 700;text-transform: uppercase;font-size: 14px;color: #fff;">Registre-se</h3>
+            <div class="uk-inline">
+                <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: user"></span>
+                <input class="uk-input uk-form-width-large" formControlName="nome" type="text" placeholder="Nome Completo" aria-label="Not clickable icon">
+            </div>
+            
+            <div class="uk-inline uk-margin-top">
+                <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: mail"></span>
+                <input class="uk-input uk-form-width-large" type="text" placeholder="Email" aria-label="Not clickable icon">
+            </div>
+            
+            <div>
+                <div class="uk-inline uk-margin-top">
+                    <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
+                    <input class="uk-input uk-form-width-large" formControlName="password" type="password" placeholder="Senha" aria-label="Not clickable icon">
+                </div>
+                <div class="uk-form-controls uk-form-controls-text">
+                    <label><input class="uk-radio" type="radio" name="radio1">ADMIN</label><br>
+                    <label><input class="uk-radio" type="radio" name="radio1">USER</label>
+                </div>
+            </div>
+
+            <button class="uk-button uk-button-secondary uk-margin-small-top">Cadastrar</button>
+            <a class="uk-padding-small"  style="color: white;font-size: small;">Já tem login?<a>Fazer login</a></a>
+        </form>
+    </div>
+</div>
