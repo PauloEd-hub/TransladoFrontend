@@ -1,7 +1,7 @@
 import { RouterModule, Routes } from "@angular/router";
 import { TransladoComponent } from "./translado.component";
-import { FormTransladoComponent } from "./components/form-translado/form-translado.component";
 import { NgModule } from "@angular/core";
+import { CreateTransladoComponent } from "./components/create-translado/create-translado.component";
 
 
 
@@ -14,7 +14,7 @@ const routes: Routes = [
         children: [
             {
                 path: 'cadastrar-translado',
-                component: FormTransladoComponent,
+                component: CreateTransladoComponent,
             }
         ]
     }

@@ -1,0 +1,38 @@
+
+<div class="uk-padding">
+    <div class="uk-flex uk-flex-center">
+        <h3>Registrar Translado</h3>
+    </div>
+    <div class="uk-card uk-card-default uk-card-body uk-border-rounded">
+        <form [formGroup]="formRegisterTranslado" class="uk-flex uk-flex-center uk-flex-middle uk-flex-column">
+            <div class="uk-inline">
+                <input class="uk-input uk-form-width-large" formControlName="dataDesejada" type="date" placeholder="Informe a data desejada" aria-label="Not clickable icon">
+            </div>
+            
+            <div class="uk-margin">
+                <select class="uk-select" aria-label="Turno">
+                    <option>Manhã(M)</option>
+                    <option>Tarde(T)</option>
+                    <option>Noite(N)</option>
+                </select>
+            </div>
+
+            <div class="uk-margin">
+                <select class="uk-select" aria-label="Veiculos">
+                    <option>Celta</option>
+                    <option>Fiat</option>
+                </select>
+            </div>
+
+            <div class="uk-margin">
+                <select class="uk-select" aria-label="Destinos">
+                    <option>Fortaleza</option>
+                    <option>Chicago</option>
+                </select>
+            </div>
+
+            <button class="uk-button uk-button-secondary uk-margin-small-top">Cadastrar</button>
+        </form>
+
+    </div>
+</div>

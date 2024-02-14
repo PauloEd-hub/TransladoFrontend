@@ -30,11 +30,11 @@
           </li>
         </div>
 
-          <div><li><a class="" routerLink="usuario/login">Login</a></li></div>
+          <div><li><a class="" routerLink="user/login">Login</a></li></div>
 
 
           <div>
-            <li><a class="" routerLink="user/login">Login</a></li>
+            <li><a class="" routerLink="user/register">Cadastre-se</a></li>
           </div>
         </ul>
       </div>
@@ -53,7 +53,7 @@
       <div class="uk-navbar-right">
         <ul class="uk-navbar-nav">
           <li>
-            <a>Translados</a>
+            <a (click)="goToTranslados()">Translados</a>
           </li>
           <li (click)="goToVehicles()"><a>Veículos</a></li>
           <li><a>Destinos</a></li>

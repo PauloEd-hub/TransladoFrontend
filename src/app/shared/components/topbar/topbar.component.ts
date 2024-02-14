@@ -22,7 +22,12 @@ export class TopbarComponent implements OnInit {
   }
 
   goToVehicles() {
-    this.route.navigate(['/ver-veiculos'])
+    this.route.navigate(['veiculo/registro-veiculo'])
+  }
+
+
+  goToTranslados() {
+    this.route.navigate(['translado/cadastrar-translado'])
   }
 
 }
