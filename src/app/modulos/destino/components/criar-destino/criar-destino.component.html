@@ -1,0 +1,23 @@
+
+<div class="uk-padding">
+    <div class="uk-flex uk-flex-center">
+        <h3>Registrar Destinos</h3>
+    </div>
+    <div >
+        <form [formGroup]="destinoForm" class="uk-flex uk-flex-center uk-flex-middle uk-flex-column">
+            <div class="uk-inline">
+                <input class="uk-input uk-form-width-large" formControlName="descricao" type="text" placeholder="Nome do Destino" aria-label="Not clickable icon">
+            </div>
+            
+            <div>
+                <div class="uk-inline uk-margin-top">
+                    <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
+                    <input class="uk-input uk-form-width-large" formControlName="capacidadeMaxima" type="text" placeholder="Sigla" aria-label="Not clickable icon">
+                </div>
+            </div>
+
+            <button class="uk-button uk-button-secondary uk-margin-small-top">Cadastrar</button>
+        </form>
+
+    </div>
+</div>

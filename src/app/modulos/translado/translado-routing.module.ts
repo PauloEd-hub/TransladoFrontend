@@ -3,10 +3,6 @@ import { TransladoComponent } from "./translado.component";
 import { NgModule } from "@angular/core";
 import { CreateTransladoComponent } from "./components/create-translado/create-translado.component";
 
-
-
-
-
 const routes: Routes = [
     {
         path: '',

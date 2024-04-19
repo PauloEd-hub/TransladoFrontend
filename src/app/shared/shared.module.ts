@@ -9,6 +9,7 @@ import { FormDestinoComponent } from "./components/form-destino/form-destino.com
 import { FormVeiculosComponent } from "./components/form-veiculos/form-veiculos.component";
 import { TopbarComponent } from "./components/topbar/topbar.component";
 import { CardVehiclesComponent } from "./components/card-vehicles/card-vehicles.component";
+import { DestinoComponent } from "../modulos/destino/destino.component";
 
 
 @NgModule({
@@ -32,7 +33,7 @@ import { CardVehiclesComponent } from "./components/card-vehicles/card-vehicles.
       FormDestinoComponent,
       TopbarComponent,
       FormVeiculosComponent,
-      CardVehiclesComponent
+      CardVehiclesComponent,
       
     ],
 
